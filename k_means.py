@@ -30,7 +30,6 @@ def KMeans(df, k, iter):
             temp = list(map(lambda x: x[:4], clusters[i]))
             centroid[i] = np.average(temp, axis=0)
 
-    # print(centroid)
     return clusters, centroid
 
 
@@ -46,3 +45,5 @@ if __name__ == '__main__':
         plt.scatter(df[0], df[1])
 
     plt.show()
+
+   
